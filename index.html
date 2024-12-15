@@ -185,7 +185,7 @@
         if (data.length > 0) {
             try {
                 // Send the data to the backend using Axios
-                const response = await axios.post('http://127.0.0.1:5000/generate', data);
+                const response = await axios.post('prim-xi.vercel.app/generate', data);
                 if (response.data.success) {
                     // Get the generated image URL
                     const imageUrl = response.data.image_url;
